@@ -1,0 +1,44 @@
+$mobile: 768px;
+
+.capitals {
+  width: 450px;
+  h2 {
+    font-size: 38px;
+    letter-spacing: 1px;
+    color: #FFF;
+    margin-top: 15px;
+  }
+  .capitals-tables {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    table {
+      thead {
+        tr {
+
+          td {
+            padding-right: 10px;
+          }
+        }
+      }
+
+      tbody {
+
+        tr {
+          height: 40px;
+
+          td{
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .capitals {
+    width: 80%;
+  }
+
+}

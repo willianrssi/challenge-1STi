@@ -1,0 +1,60 @@
+$mobile: 768px;
+
+.search-field {
+  border-bottom: 2px solid #FFCD7E;
+  margin-top: 20px;
+  padding: 0 60px 40px;
+
+  .search-input {
+    border: 2px solid #E29140;
+    display: flex;
+    height: 55px;
+    width: 500px;
+
+    > input {
+      border: 0;
+      font-size: 20px;
+      height: 100%;
+      letter-spacing: 1px;
+      padding-left: 15px;
+      width: 100%;
+    }
+
+    .btn-search {
+      background: #FFF;
+      border: 0;
+      height: 100%;
+      padding: 14px 14px 8px;
+      width: 56px;
+
+    > img {
+      width: 100%;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .search-field {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 40px 0;
+    width: 100%;
+
+    .search-input {
+      height: 40px;
+      width: 90%;
+
+      > input {
+        font-size: 15px;
+        letter-spacing: 0;
+      }
+
+      .btn-search {
+        padding: 10px 14px 8px;
+
+      }
+    }
+  }
+}

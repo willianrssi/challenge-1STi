@@ -1,0 +1,75 @@
+@charset 'utf-8';
+@import 'spinner';
+@import 'forecast';
+@import 'capitals';
+@import 'search-city-input';
+
+$font: sans-serif;
+$mobile: 768px;
+
+html {
+  background: linear-gradient(#FF7F00, #FFBB00);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+}
+body {
+  min-height: 100vh;
+}
+
+div[data-js="app"] {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+
+    > h1 {
+      color: #FFF;
+      margin-bottom: 30px;
+    }
+
+    .panel-close-title {
+      font-size: 4em;
+    }
+
+    .panel-open-title {
+      font-size: 3em;
+    }
+
+}
+
+@media screen and (max-width: $mobile) {
+
+  .main {
+    width: 100%;
+
+      > h1 {
+        width: 80%;
+        margin-top: 20px;
+      }
+
+      .panel-close-title {
+        font-size: 3em;
+        width: 80%;
+      }
+
+      .panel-open-title {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+        margin-left: 10%;
+        width: 100%;
+      }
+
+  }
+
+}

@@ -1,0 +1,106 @@
+$panelFont: #505050;
+$mobile: 768px;
+
+.forecast {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .forecast-panel {
+    background: #FFF3E4;
+    color: $panelFont;
+    padding: 20px;
+    width: 460px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+
+    .forecast-panel-top {
+      display: flex;
+      padding-left: 20px;
+      justify-content: space-between;
+      border-bottom: 1px solid #FF8104;
+    }
+
+    .forecast-panel-close {
+      width: 15px;
+
+      span {
+        cursor: pointer;
+        position: relative;
+        right: -5px;
+        top: -5px;
+      }
+    }
+
+    .forecast-panel-city{
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .forecast-panel-condition{
+      font-size: 45px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .forecast-panel-table-today {
+      tbody {
+        tr {
+          height: 45px;
+          td {
+            width: 150px;
+
+            .forecast-panel-table-arrow-up {
+              margin-left: 10px;
+            }
+
+            span {
+
+              font-weight: bold;
+
+              img {
+                width: 12px
+              }
+
+            }
+          }
+        }
+      }
+    }
+
+    .forecast-panel-wind {
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .forecast-panel-table-nextdays {
+      margin-top: 15px;
+      width: 100%;
+      td {
+        color:#FF8104 ;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: $mobile) {
+  .forecast {
+
+    .forecast-panel {
+      width: 100%;
+      padding: 20px 0;
+      box-shadow: inset 0px 11px 11px -10px rgba(0,0,0,0.3), 0px 2px 5px 0px rgba(0,0,0,0.3);
+      ;
+
+      .forecast-panel-close span {
+        right: 10px;
+      }
+
+   }
+  }
+}
